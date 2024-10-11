@@ -13,4 +13,7 @@ export class HomeComponent {
   feedback(){
     this.route.navigateByUrl("/feedback")
   }
+  sobre(){
+    this.route.navigateByUrl("/sobre")
+  }
 }
