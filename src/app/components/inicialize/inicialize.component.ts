@@ -12,11 +12,8 @@ import { Router } from '@angular/router';
 export class InicializeComponent {
 
    route = inject(Router)
-  ngOnInit(){
-    setTimeout(() =>{
-      console.log("foi")
+  nextPage(){
       this.route.navigateByUrl("/home")
-    },3000)
   }
 
 }

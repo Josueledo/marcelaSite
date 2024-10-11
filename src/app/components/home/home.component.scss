@@ -6,7 +6,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: rgb(231, 231, 231);
+  background: linear-gradient(150deg, rgb(236, 179, 73) 0%, rgb(201, 110, 36) 100%);
+
   header{
     width: 100%;
     top: 0;
@@ -19,7 +20,7 @@
       align-items: center;
       justify-content: center;
       h1{
-        color:rgb(112, 112, 112);
+        color:rgb(245, 245, 245);
       }
 
     }
@@ -28,8 +29,6 @@
         height: 60px;
         position: absolute;
         left: calc(50% - 120px);
-        filter: invert(.8);
-        opacity: .6;
       }
     }
 
@@ -44,25 +43,26 @@
       .card{
         width: 280px;
         height: 130px;
-        background: linear-gradient(167deg, rgb(192, 64, 109) 0%, rgb(212, 79, 81) 100%);
+        background: linear-gradient(167deg, rgb(247, 247, 247) 0%, rgb(238, 238, 238) 100%);
         list-style: none;
         border-radius: 20px;
         display: flex;
-        align-items: end;
+        align-items: center;
         justify-content: start;
         padding: 20px;
         position: relative;
         overflow: hidden;
         &:hover{
           cursor: pointer;
-          background: linear-gradient(167deg, rgb(150, 51, 86) 0%, rgb(158, 56, 58) 100%);
+          opacity: .8;
 
           & .icon{
             transform: rotate(-40deg);
+            bottom: -10px;
           }
         }
         .title{
-          color: white;
+          color: rgb(44, 44, 44);
           display: flex;
           align-items: center;
           justify-content: center;
@@ -72,7 +72,7 @@
             font-weight: 500;
             font-size: 1.5rem;
             width: 140px;
-            height: 70px;
+            max-height: 70px;
 
           }
           span{
@@ -83,17 +83,19 @@
         }
         .icon{
           position:absolute;
-          right: -120px;
-          top: 0px;
+          right: -30px;
+          bottom: -90px;
           -webkit-touch-callout: none;
           -webkit-user-select: none;
           -khtml-user-select: none;
           -moz-user-select: none;
           -ms-user-select: none;
           user-select: none;
-          filter: grayscale(1);
           transition: all .3s;
+          img{
+            width: 150px;
 
+          }
         }
       }
       .card.active{
@@ -123,11 +125,11 @@
     right: 0;
     bottom: 0;
     margin: 15px;
-    background-color: rgb(219, 98, 98);
+    background-color: rgb(224, 224, 224);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: rgb(211, 133, 44);
   }
 }
 
