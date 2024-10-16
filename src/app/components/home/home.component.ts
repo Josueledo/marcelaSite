@@ -16,4 +16,7 @@ export class HomeComponent {
   sobre(){
     this.route.navigateByUrl("/sobre")
   }
+  saiba(){
+    this.route.navigateByUrl("/saiba")
+  }
 }

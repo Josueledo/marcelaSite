@@ -4,6 +4,7 @@ import { HomeComponent } from './components/home/home.component';
 import { InicializeComponent } from './components/inicialize/inicialize.component';
 import { FeedbackComponent } from './components/feedback/feedback.component';
 import { SobreComponent } from './components/sobre/sobre.component';
+import { SaibaComponent } from './components/saiba/saiba.component';
 
 export const routes: Routes = [
   {
@@ -24,5 +25,10 @@ export const routes: Routes = [
   {
     path:"sobre",
     component:SobreComponent
+  }
+  ,
+  {
+    path:"saiba",
+    component:SaibaComponent
   }
 ];
